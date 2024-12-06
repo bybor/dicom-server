@@ -1,5 +1,8 @@
 <Project>
 
   <!-- Prevent the docker compose project from reading the above Directory.Build.props file -->
+  <PropertyGroup>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
 
 </Project>

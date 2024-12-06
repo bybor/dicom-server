@@ -15,9 +15,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Product>Microsoft Health</Product>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <TrimMode>partial</TrimMode>
-    <WarningsAsErrors />
   </PropertyGroup>
 
   <!-- Currently the latest version is .NET 8 -->

@@ -51,7 +51,7 @@ paths:
             default: true
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -78,7 +78,7 @@ paths:
             default: true
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -138,7 +138,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -176,7 +176,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -214,7 +214,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/DicomItem'
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -256,7 +256,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -289,7 +289,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -327,7 +327,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/DicomItem'
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -389,7 +389,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -457,7 +457,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -545,7 +545,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom: { }
             multipart/related: { }
@@ -624,7 +624,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom: { }
             multipart/related: { }
@@ -730,7 +730,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -778,7 +778,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -817,7 +817,7 @@ paths:
               $ref: '#/components/schemas/UpdateExtendedQueryTagOptions'
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -860,7 +860,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -909,7 +909,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/DicomOperationIOperationState'
         '200':
-          description: Success
+          description: OK
           content:
             text/plain:
               schema:
@@ -926,7 +926,7 @@ paths:
         - Partition
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/json:
               schema:
@@ -976,7 +976,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1005,7 +1005,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1043,7 +1043,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/DicomItem'
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -1078,7 +1078,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1101,7 +1101,7 @@ paths:
       operationId: StoreInstance
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1139,7 +1139,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/DicomItem'
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -1179,7 +1179,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1226,7 +1226,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1283,7 +1283,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1335,7 +1335,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1387,7 +1387,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1434,7 +1434,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1491,7 +1491,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1543,7 +1543,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1605,7 +1605,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1662,7 +1662,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1700,7 +1700,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1745,7 +1745,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1800,7 +1800,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1850,7 +1850,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -1912,7 +1912,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
         '204':
           description: No Content
           content:
@@ -1968,7 +1968,7 @@ paths:
             default: 100
       responses:
         '200':
-          description: Success
+          description: OK
         '204':
           description: No Content
           content:
@@ -2027,7 +2027,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -2082,7 +2082,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -2147,7 +2147,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -2199,7 +2199,7 @@ paths:
               format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             multipart/related: { }
         '400':
@@ -2259,7 +2259,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
         '204':
           description: No Content
           content:
@@ -2321,7 +2321,7 @@ paths:
             default: 100
       responses:
         '200':
-          description: Success
+          description: OK
         '204':
           description: No Content
           content:
@@ -2355,14 +2355,14 @@ paths:
         - Schema
       responses:
         '200':
-          description: Success
+          description: OK
   /_schema/versions/current:
     get:
       tags:
         - Schema
       responses:
         '200':
-          description: Success
+          description: OK
   '/_schema/versions/{id}/script':
     get:
       tags:
@@ -2377,7 +2377,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
   '/_schema/versions/{id}/script/diff':
     get:
       tags:
@@ -2392,14 +2392,14 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
   /_schema/compatibility:
     get:
       tags:
         - Schema
       responses:
         '200':
-          description: Success
+          description: OK
   '/v2/partitions/{partitionName}/studies/$bulkUpdate':
     post:
       tags:
@@ -2506,7 +2506,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '202':
           description: Accepted
         '409':
@@ -2526,7 +2526,7 @@ paths:
               schema:
                 type: string
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -2566,7 +2566,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -2601,7 +2601,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '202':
           description: Accepted
         '409':
@@ -2621,7 +2621,7 @@ paths:
               schema:
                 type: string
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -2656,7 +2656,7 @@ paths:
             format: int32
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom+json:
               schema:
@@ -2726,7 +2726,7 @@ paths:
               schema:
                 type: string
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -2779,7 +2779,7 @@ paths:
               schema:
                 type: string
         '415':
-          description: Client Error
+          description: Unsupported Media Type
           content:
             application/json:
               schema:
@@ -2813,7 +2813,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '400':
           description: Bad Request
         '404':
@@ -2844,7 +2844,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '400':
           description: Bad Request
         '404':
@@ -2869,7 +2869,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom: { }
             multipart/related: { }
@@ -2905,7 +2905,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '400':
           description: Bad Request
         '409':
@@ -2913,7 +2913,7 @@ paths:
         '404':
           description: Not Found
         '415':
-          description: Client Error
+          description: Unsupported Media Type
   '/v2/workitems/{workitemInstanceUid}':
     get:
       tags:
@@ -2927,7 +2927,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Success
+          description: OK
           content:
             application/dicom: { }
             multipart/related: { }
@@ -2958,7 +2958,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Success
+          description: OK
         '400':
           description: Bad Request
         '409':
@@ -2966,7 +2966,7 @@ paths:
         '404':
           description: Not Found
         '415':
-          description: Client Error
+          description: Unsupported Media Type
 components:
   schemas:
     AddExtendedQueryTagEntry:

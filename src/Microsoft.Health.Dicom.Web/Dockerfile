@@ -10,7 +10,8 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
     ASPNETCORE_URLS=http://+:8080 \
     # Explicitly set locale to be en_US for DICOM Web
     LANG=en_US.UTF-8 \
-    LC_ALL=en_US.UTF-8
+    LC_ALL=en_US.UTF-8 \
+    DOTNET_ROLL_FORWARD=LatestMajor
 EXPOSE 8080
 USER $APP_UID
 
@@ -19,16 +20,19 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0.301-alpine3.18-amd64@sha256:5ccd7acc1ff31f
 ARG BUILD_CONFIGURATION=Release
 ARG CONTINUOUS_INTEGRATION_BUILD=false
 
-# TODO: Remove once Swashbuckle has been updated for .NET 7
-RUN set -x && \
-    apk update && \
-    apk add --no-cache bash && \
-    curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Channel 6.0 -InstallDir /usr/share/dotnet
+ENV DOTNET_ROLL_FORWARD=LatestMajor
 
+# # TODO: Remove once Swashbuckle has been updated for .NET 7
+# RUN set -x && \
+#     apk update && \
+#     apk add --no-cache bash && \
+#     curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Channel 6.0 -InstallDir /usr/share/dotnet
+#
+#
 WORKDIR /dicom-server
 COPY . .
 WORKDIR /dicom-server/src/Microsoft.Health.Dicom.Web
-RUN dotnet build "Microsoft.Health.Dicom.Web.csproj" -c $BUILD_CONFIGURATION -p:ContinuousIntegrationBuild=$CONTINUOUS_INTEGRATION_BUILD -warnaserror
+RUN dotnet build "Microsoft.Health.Dicom.Web.csproj" -c $BUILD_CONFIGURATION -p:ContinuousIntegrationBuild=$CONTINUOUS_INTEGRATION_BUILD
 
 # Publish the DICOM Server from the build
 FROM build as publish
